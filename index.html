@@ -358,20 +358,23 @@
     /* ── Hamburger button (hidden on desktop) ───────────────── */
     #menu-btn {
       display: none;
+      flex-direction: column;        /* bars stack vertically */
       align-items: center; justify-content: center;
+      gap: 5px;                      /* space between bars */
       background: none; border: none; cursor: pointer;
-      padding: 7px; margin-right: 6px; border-radius: 4px;
+      padding: 8px 7px; margin-right: 6px; border-radius: 4px;
       flex-shrink: 0;
     }
     #menu-btn:hover { background: rgba(255,255,255,.12); }
     #menu-btn .bar {
-      display: block; width: 20px; height: 2px;
-      background: #fff; border-radius: 1px; margin: 3.5px 0;
-      transition: transform .22s, opacity .22s;
+      display: block; width: 22px; height: 2px;
+      background: #fff; border-radius: 1px;
+      transition: transform .25s ease, opacity .2s ease;
     }
-    #menu-btn.open .bar:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+    /* Open state: bar1 + bar3 move to center (gap=5px, bar=2px → step = 7px) and cross */
+    #menu-btn.open .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     #menu-btn.open .bar:nth-child(2) { opacity: 0; }
-    #menu-btn.open .bar:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+    #menu-btn.open .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* Overlay (shown on mobile when sidebar open) */
     #sidebar-overlay {
@@ -384,7 +387,7 @@
 
     /* Tablet & mobile: sidebar becomes a slide-in drawer */
     @media (max-width: 899px) {
-      #menu-btn { display: flex; }
+      #menu-btn { display: flex; flex-direction: column; }
 
       #sidebar {
         position: fixed;
