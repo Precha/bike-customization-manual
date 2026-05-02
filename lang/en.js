@@ -30,6 +30,7 @@ window.i18n['en'] = {
   home_s1_p2      : 'The platform consists of two interconnected tools:',
   home_s1_li1     : '<strong>Consumer Site</strong> — A public-facing web configurator where end customers browse Giant bike models, personalize their paint design, choose component upgrades, and place a custom order for pickup at their local Giant store.',
   home_s1_li2     : '<strong>Configuration Portal</strong> — A dealer and internal staff tool for tracking and managing the lifecycle of every custom bike order, from payment confirmation through to customer pickup.',
+  home_s1_li3     : '<strong>Shopify</strong> <em>(GSC Staff Only)</em> — The e-commerce backend used by GSC internal staff to monitor orders, review payment details, add notes, and perform order management actions.',
   home_s1_p3      : 'Together, these tools create a seamless end-to-end experience for customers and staff alike. This manual covers both tools with step-by-step instructions and annotated screenshots.',
 
   /* 2. Target Audience */

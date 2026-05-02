@@ -32,6 +32,7 @@ window.i18n['nl'] = {
   home_s1_p2      : 'Het platform bestaat uit twee onderling verbonden tools:',
   home_s1_li1     : '<strong>Consumentensite</strong> — Een publiekelijk toegankelijke webconfigurator waarmee eindklanten Giant-fietsmodellen kunnen bekijken, hun lakdesign kunnen personaliseren, componentupgrades kunnen kiezen en een aangepaste bestelling kunnen plaatsen voor afhaling bij hun lokale Giant-winkel.',
   home_s1_li2     : '<strong>Beheerdersportaal</strong> — Een tool voor dealers en interne medewerkers om de levenscyclus van elke aangepaste fietsbestelling bij te houden en te beheren, van betalingsbevestiging tot afhaling door de klant.',
+  home_s1_li3     : '<strong>Shopify</strong> <em>(Alleen voor GSC-medewerkers)</em> — De e-commerce backend die door interne GSC-medewerkers wordt gebruikt om bestellingen te bewaken, betalingsdetails te bekijken, notities toe te voegen en bestellingbeheeracties uit te voeren.',
   home_s1_p3      : 'Samen bieden deze tools een naadloze end-to-end ervaring voor zowel klanten als medewerkers. Deze handleiding behandelt beide tools met stapsgewijze instructies en geannoteerde screenshots.',
 
   /* 2. Doelgroep */
