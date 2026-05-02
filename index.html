@@ -454,6 +454,65 @@
       .support-label { min-width: 60px; }
     }
 
+    /* ── Password overlay ───────────────────────────────────── */
+    #pw-overlay {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #045EB9;
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity .4s ease;
+    }
+    #pw-overlay.hidden { opacity: 0; pointer-events: none; }
+
+    #pw-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 36px 36px;
+      width: 100%; max-width: 380px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,.25);
+    }
+    #pw-box img {
+      height: 40px; margin-bottom: 24px;
+      /* invert white logo for light background */
+      filter: brightness(0) saturate(100%) invert(23%) sepia(94%) saturate(1200%) hue-rotate(196deg) brightness(90%);
+    }
+    #pw-box h2 {
+      font-size: 16px; font-weight: 700; color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+    #pw-box p {
+      font-size: 13px; color: #666; margin-bottom: 22px;
+    }
+    #pw-input-wrap {
+      display: flex; gap: 8px; margin-bottom: 10px;
+    }
+    #pw-input {
+      flex: 1; padding: 10px 14px; border: 1.5px solid #ddd;
+      border-radius: 6px; font-size: 14px; outline: none;
+      transition: border-color .2s;
+    }
+    #pw-input:focus { border-color: #045EB9; }
+    #pw-input.error { border-color: #cc0000; animation: shake .3s ease; }
+    #pw-submit {
+      padding: 10px 18px; background: #045EB9; color: #fff;
+      border: none; border-radius: 6px; font-size: 14px;
+      font-weight: 600; cursor: pointer; white-space: nowrap;
+      transition: background .15s;
+    }
+    #pw-submit:hover { background: #034a96; }
+    #pw-error {
+      font-size: 12.5px; color: #cc0000;
+      min-height: 18px; transition: opacity .2s;
+    }
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      25%      { transform: translateX(-6px); }
+      75%      { transform: translateX(6px); }
+    }
+    @media (max-width: 420px) {
+      #pw-box { padding: 32px 22px 28px; margin: 16px; }
+    }
+
     @media print {
       #topbar, #tabbar, #sidebar, #menu-btn, #sidebar-overlay { display: none !important; }
       #shell { margin-top: 0; }
@@ -463,6 +522,21 @@
   </style>
 </head>
 <body>
+
+<!-- ── Password overlay ─────────────────────────────────────── -->
+<div id="pw-overlay">
+  <div id="pw-box">
+    <img src="assets/Giant_Group_Logo_cropped.jpg" alt="GIANT GROUP" />
+    <h2>Giant Custom Bike Manual</h2>
+    <p>Enter the password to access this manual.</p>
+    <div id="pw-input-wrap">
+      <input type="password" id="pw-input" placeholder="Password"
+             onkeydown="if(event.key==='Enter')checkPassword()" />
+      <button id="pw-submit" onclick="checkPassword()">Enter</button>
+    </div>
+    <div id="pw-error"></div>
+  </div>
+</div>
 
 <!-- ── Sidebar overlay (mobile) ─────────────────────────────── -->
 <div id="sidebar-overlay" onclick="closeSidebar()"></div>
@@ -1447,6 +1521,47 @@ function applyConfig() {
   }
 
   applyContacts();
+}
+
+/* ── Password protection ───────────────────────────────────── */
+(function() {
+  var SESSION_KEY = 'gbm_auth';
+  if (sessionStorage.getItem(SESSION_KEY) === '1') {
+    /* Already authenticated this session — hide overlay immediately */
+    var ov = document.getElementById('pw-overlay');
+    if (ov) ov.style.display = 'none';
+    return;
+  }
+  /* Prevent scrolling while overlay is shown */
+  document.body.style.overflow = 'hidden';
+  /* Focus the input */
+  window.addEventListener('load', function() {
+    var inp = document.getElementById('pw-input');
+    if (inp) inp.focus();
+  });
+})();
+
+function checkPassword() {
+  var cfg = window.MANUAL_CONFIG;
+  var correct = cfg && cfg.site_password ? cfg.site_password : '';
+  var entered = document.getElementById('pw-input').value;
+  var input   = document.getElementById('pw-input');
+  var errEl   = document.getElementById('pw-error');
+  var overlay = document.getElementById('pw-overlay');
+
+  if (entered === correct) {
+    sessionStorage.setItem('gbm_auth', '1');
+    document.body.style.overflow = '';
+    overlay.classList.add('hidden');
+    setTimeout(function() { overlay.style.display = 'none'; }, 420);
+  } else {
+    errEl.textContent = 'Incorrect password. Please try again.';
+    input.classList.remove('error');
+    void input.offsetWidth; /* reflow to restart animation */
+    input.classList.add('error');
+    input.value = '';
+    input.focus();
+  }
 }
 
 /* ── Sidebar drawer (mobile) ───────────────────────────────── */

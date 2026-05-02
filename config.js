@@ -6,6 +6,10 @@
 
 window.MANUAL_CONFIG = {
 
+  /* ── 密碼保護 / Password Protection ─────────────────────── */
+  site_password : 'giant2026',   /* 修改此處以變更密碼 */
+
+
   /* ── 版本資訊 / Version Info ─────────────────────────────── */
   manual_version  : '1.0',
   last_updated    : '2026-05-02',      /* 格式 YYYY-MM-DD */
