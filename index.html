@@ -355,19 +355,104 @@
     .support-row a { color: var(--red); text-decoration: none; word-break: break-all; }
     .support-row a:hover { text-decoration: underline; }
 
+    /* ── Hamburger button (hidden on desktop) ───────────────── */
+    #menu-btn {
+      display: none;
+      align-items: center; justify-content: center;
+      background: none; border: none; cursor: pointer;
+      padding: 7px; margin-right: 6px; border-radius: 4px;
+      flex-shrink: 0;
+    }
+    #menu-btn:hover { background: rgba(255,255,255,.12); }
+    #menu-btn .bar {
+      display: block; width: 20px; height: 2px;
+      background: #fff; border-radius: 1px; margin: 3.5px 0;
+      transition: transform .22s, opacity .22s;
+    }
+    #menu-btn.open .bar:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+    #menu-btn.open .bar:nth-child(2) { opacity: 0; }
+    #menu-btn.open .bar:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+    /* Overlay (shown on mobile when sidebar open) */
+    #sidebar-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.45); z-index: 149; cursor: pointer;
+    }
+    #sidebar-overlay.active { display: block; }
+
     /* ── Responsive ─────────────────────────────────────────── */
-    @media (max-width: 768px) {
-      :root { --sidebar-w: 200px; }
-      #content { padding: 20px 18px 48px; }
+
+    /* Tablet & mobile: sidebar becomes a slide-in drawer */
+    @media (max-width: 899px) {
+      #menu-btn { display: flex; }
+
+      #sidebar {
+        position: fixed;
+        top: calc(var(--topbar-h) + var(--tabbar-h));
+        left: 0;
+        height: calc(100vh - var(--topbar-h) - var(--tabbar-h));
+        z-index: 150;
+        transform: translateX(-110%);
+        transition: transform .25s cubic-bezier(.4,0,.2,1);
+        border-right: none;
+        box-shadow: none;
+        width: 240px;
+      }
+      #sidebar.open {
+        transform: translateX(0);
+        box-shadow: 6px 0 28px rgba(0,0,0,.2);
+      }
+
+      #content { padding: 20px 20px 52px; }
       .section { padding: 22px 18px; }
       .fig-row { flex-direction: column; }
+      .home-hero { padding: 36px 28px 32px; }
     }
-    @media (max-width: 600px) {
-      #sidebar { display: none; }
-      #content { padding: 16px 14px 40px; }
+
+    /* Mobile */
+    @media (max-width: 599px) {
+      :root { --topbar-h: 48px; }
+
+      /* Top bar */
+      #topbar { padding: 0 12px; gap: 6px; }
+      #topbar .brand img { height: 28px; }
+      #topbar label { display: none; }
+
+      /* Tab bar: horizontally scrollable */
+      #tabbar {
+        padding: 0 6px; gap: 0;
+        overflow-x: auto; -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      #tabbar::-webkit-scrollbar { display: none; }
+      .tab-btn { padding: 10px 13px 9px; font-size: 12px; flex-shrink: 0; }
+
+      /* Layout */
+      #content { padding: 14px 12px 44px; }
+      .section { padding: 18px 14px; margin-bottom: 14px; }
+      h2.sh1 { font-size: 16px; }
+      h3.sh2 { font-size: 13.5px; }
+
+      /* Hero */
+      .home-hero { padding: 26px 18px 22px; }
+      .home-hero h1 { font-size: 17px; }
+      .home-hero img.hero-logo { height: 26px; }
+
+      /* Audience grid: single column */
+      .audience-grid { grid-template-columns: 1fr; }
+
+      /* Tables: horizontal scroll */
+      .st-wrap, .contacts-table, .version-table, .st {
+        display: block; overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* Support blocks */
+      .support-label { min-width: 60px; }
     }
+
     @media print {
-      #topbar, #tabbar, #sidebar { display: none !important; }
+      #topbar, #tabbar, #sidebar, #menu-btn, #sidebar-overlay { display: none !important; }
       #shell { margin-top: 0; }
       .tab-panel { display: block !important; }
       .section { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
@@ -376,8 +461,14 @@
 </head>
 <body>
 
+<!-- ── Sidebar overlay (mobile) ─────────────────────────────── -->
+<div id="sidebar-overlay" onclick="closeSidebar()"></div>
+
 <!-- ── Top bar ──────────────────────────────────────────────── -->
 <div id="topbar">
+  <button id="menu-btn" onclick="toggleSidebar()" aria-label="Menu">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
   <div class="brand">
     <img src="assets/Giant_Group_Logo_cropped.jpg" alt="GIANT GROUP" />
   </div>
@@ -1355,6 +1446,21 @@ function applyConfig() {
   applyContacts();
 }
 
+/* ── Sidebar drawer (mobile) ───────────────────────────────── */
+function toggleSidebar() {
+  var s  = document.getElementById('sidebar');
+  var ov = document.getElementById('sidebar-overlay');
+  var btn = document.getElementById('menu-btn');
+  var open = s.classList.toggle('open');
+  ov.classList.toggle('active', open);
+  btn.classList.toggle('open', open);
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebar-overlay').classList.remove('active');
+  document.getElementById('menu-btn').classList.remove('open');
+}
+
 /* ── i18n ──────────────────────────────────────────────────── */
 function switchLang(lang) {
   const d = window.i18n && window.i18n[lang];
@@ -1395,6 +1501,7 @@ function switchTab(tab) {
   if (first) first.classList.add('active');
 
   try { localStorage.setItem('preferred_tab', tab); } catch(e) {}
+  if (window.innerWidth < 900) closeSidebar();
 }
 
 /* ── Scroll-spy ────────────────────────────────────────────── */
@@ -1438,6 +1545,18 @@ window.addEventListener('scroll', function() {
   document.getElementById('lang-select').value = lang;
   switchLang(lang);   /* also calls applyConfig() */
   if (tab !== 'home') switchTab(tab);
+
+  /* Close sidebar when any nav link is clicked on mobile */
+  document.querySelectorAll('.nav-item').forEach(function(a) {
+    a.addEventListener('click', function() {
+      if (window.innerWidth < 900) closeSidebar();
+    });
+  });
+
+  /* Close sidebar on Escape key */
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSidebar();
+  });
 })();
 </script>
 
