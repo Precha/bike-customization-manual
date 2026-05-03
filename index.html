@@ -1542,13 +1542,14 @@ function applyConfig() {
 
 function checkPassword() {
   var cfg = window.MANUAL_CONFIG;
-  var correct = cfg && cfg.site_password ? cfg.site_password : '';
+  var passwords = cfg && cfg.site_password ? cfg.site_password : [];
+  if (!Array.isArray(passwords)) passwords = [passwords];
   var entered = document.getElementById('pw-input').value;
   var input   = document.getElementById('pw-input');
   var errEl   = document.getElementById('pw-error');
   var overlay = document.getElementById('pw-overlay');
 
-  if (entered === correct) {
+  if (passwords.indexOf(entered) !== -1) {
     sessionStorage.setItem('gbm_auth', '1');
     document.body.style.overflow = '';
     overlay.classList.add('hidden');

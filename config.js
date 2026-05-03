@@ -7,7 +7,11 @@
 window.MANUAL_CONFIG = {
 
   /* ── 密碼保護 / Password Protection ─────────────────────── */
-  site_password : 'giant2026',   /* 修改此處以變更密碼 */
+  site_password : [              /* 新增或移除密碼，任一個正確即可進入 */
+    'giant2026',
+    'G!@nt2025',
+    'GJ2026',
+  ],
 
 
   /* ── 版本資訊 / Version Info ─────────────────────────────── */
