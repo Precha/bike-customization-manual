@@ -298,7 +298,7 @@ window.i18n['zh-TW'] = {
   s2_2_heading : '2.2&nbsp;&nbsp;使用您的 Giant 帳號進行驗證',
   s2_2_p1      : '點擊 <em>Sign in with Giant</em> 後，您將被重新導向至 Giant Group 驗證入口（eac.giantcycling.com）。您有兩個選項：',
   s2_2_li1     : 'GSC員工使用<strong>公司帳號AAD（Azure Active Directory）</strong>— 點擊 AAD 按鈕，使用您的企業 Microsoft 帳號登入（建議 Giant 內部員工使用）。',
-  s2_2_li2     : '直營店及經銷商店長使用<strong>帳號與密碼</strong>— 直接在右側欄位中輸入您的電子郵件和密碼(與DCF帳號相同)。',
+  s2_2_li2     : '直營店及經銷商店長使用<strong>帳號與密碼</strong>— 若有 DCF 帳號，則使用相同的帳號密碼登入。',
   s2_2_fig     : '圖 2 — Giant Group 驗證入口',
   s2_3_heading : '2.3&nbsp;&nbsp;輸入您的憑證',
   s2_3_li1     : '在 <strong>使用者名稱</strong> 欄位中輸入您的 Giant 帳號電子郵件地址。',
