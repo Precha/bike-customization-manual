@@ -419,7 +419,7 @@ window.i18n['nl'] = {
   sp_s2_p1      : 'Toegang tot de Giant EU Shopify-winkel is uitsluitend op uitnodiging. U ontvangt een e-mail van <strong>mailer@shopify.com</strong> met als onderwerp <em>"Accept your invite to Giant Bicycle, Inc."</em>',
   sp_s2_li1     : 'Open de uitnodigingsmail en klik op de knop <strong>"Accept invite"</strong>.',
   sp_s2_li2     : 'U wordt gevraagd een Shopify-account aan te maken of in te loggen op een bestaand account.',
-  sp_s2_li3     : 'Na acceptatie heeft u toegang tot het Giant EU Shopify-beheerpaneel.',
+  sp_s2_li3     : 'Na acceptatie heeft u toegang tot het Giant Custom Bike Shopify-beheerpaneel.',
   sp_s2_note    : '<strong>Let op:</strong> Als u deze uitnodiging niet verwachtte, kunt u de e-mail veilig negeren. Neem contact op met uw Giant Group IT-beheerder als u toegang nodig heeft maar geen uitnodiging heeft ontvangen.',
   sp_s2_fig1    : 'Figuur 1 — Shopify-uitnodigingsmail van Giant Bicycle, Inc.',
 

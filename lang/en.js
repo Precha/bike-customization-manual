@@ -421,7 +421,7 @@ window.i18n['en'] = {
   sp_s2_p1      : 'Access to the Giant EU Shopify store is by invitation only. You will receive an email from <strong>mailer@shopify.com</strong> with the subject line <em>"Accept your invite to Giant Bicycle, Inc."</em>',
   sp_s2_li1     : 'Open the invitation email and click the <strong>"Accept invite"</strong> button.',
   sp_s2_li2     : 'You will be prompted to create a Shopify account or sign in to an existing one.',
-  sp_s2_li3     : 'Once accepted, you will have access to the Giant EU Shopify admin panel.',
+  sp_s2_li3     : 'Once accepted, you will have access to the Giant Custom Bike Shopify admin panel.',
   sp_s2_note    : '<strong>Note:</strong> If you were not expecting this invitation, you can safely ignore the email. Contact your Giant Group IT administrator if you need access but have not received an invitation.',
   sp_s2_fig1    : 'Figure 1 — Shopify invitation email from Giant Bicycle, Inc.',
 

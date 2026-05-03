@@ -419,7 +419,7 @@ window.i18n['zh-TW'] = {
   sp_s2_p1      : 'Giant EU Shopify 商店的存取權限僅限邀請制。您將收到一封來自 <strong>mailer@shopify.com</strong> 的電子郵件，主旨為 <em>"Accept your invite to Giant Bicycle, Inc."</em>',
   sp_s2_li1     : '開啟邀請信，點擊 <strong>「Accept invite」</strong> 按鈕。',
   sp_s2_li2     : '系統會提示您建立 Shopify 帳號，或登入現有帳號。',
-  sp_s2_li3     : '接受邀請後，您即可存取 Giant EU Shopify 管理後台。',
+  sp_s2_li3     : '接受邀請後，您即可存取 Giant 客製化自行車 Shopify 管理後台。',
   sp_s2_note    : '<strong>注意：</strong>如果您並未預期收到此邀請，可以安全地忽略該郵件。如需存取權限但未收到邀請，請聯繫您的 Giant Group IT 管理員。',
   sp_s2_fig1    : '圖 1 — 來自 Giant Bicycle, Inc. 的 Shopify 邀請信',
 

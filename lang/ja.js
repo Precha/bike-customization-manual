@@ -419,7 +419,7 @@ window.i18n['ja'] = {
   sp_s2_p1      : 'Giant EU Shopify ストアへのアクセスは招待制です。<strong>mailer@shopify.com</strong> から件名 <em>"Accept your invite to Giant Bicycle, Inc."</em> のメールが届きます。',
   sp_s2_li1     : '招待メールを開き、<strong>「Accept invite」</strong>ボタンをクリックする。',
   sp_s2_li2     : 'Shopify アカウントの新規作成、または既存のアカウントでのサインインを求められる。',
-  sp_s2_li3     : '招待を承諾すると、Giant EU Shopify 管理パネルにアクセスできるようになる。',
+  sp_s2_li3     : '招待を承諾すると、Giant カスタムバイク Shopify 管理パネルにアクセスできるようになる。',
   sp_s2_note    : '<strong>注意：</strong>この招待を予期していなかった場合は、メールを無視して構いません。アクセスが必要だが招待が届いていない場合は、Giant Group IT 管理者にお問い合わせください。',
   sp_s2_fig1    : '図1 — Giant Bicycle, Inc. からの Shopify 招待メール',
 
