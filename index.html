@@ -277,6 +277,42 @@
     }
     .home-hero p { font-size: 14px; color: rgba(255,255,255,.75); max-width: 580px; }
 
+    /* Split hero: text left + image right */
+    .home-hero--split {
+      padding: 0;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+    }
+    .home-hero--split .hero-content {
+      flex: 1 1 55%;
+      padding: 44px 40px;
+      min-width: 0;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-image-wrap {
+      flex: 0 0 45%;
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+    .hero-davinci {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 42% center;
+      display: block;
+    }
+    .hero-image-fade {
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 60%;
+      background: linear-gradient(to right, #045EB9 0%, rgba(4,94,185,0) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
     .audience-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -410,6 +446,9 @@
       .section { padding: 22px 18px; }
       .fig-row { flex-direction: column; }
       .home-hero { padding: 36px 28px 32px; }
+      .home-hero--split { padding: 0; }
+      .home-hero--split .hero-content { padding: 36px 28px 32px; }
+      .hero-image-wrap { min-height: 180px; }
     }
 
     /* Mobile */
@@ -438,6 +477,9 @@
 
       /* Hero */
       .home-hero { padding: 26px 18px 22px; }
+      .home-hero--split { padding: 0; flex-direction: column; }
+      .home-hero--split .hero-content { padding: 26px 18px 22px; }
+      .hero-image-wrap { flex: 0 0 auto; min-height: 160px; }
       .home-hero h1 { font-size: 17px; }
       .home-hero img.hero-logo { height: 26px; }
 
@@ -639,10 +681,16 @@
     <div class="tab-panel active" id="panel-home">
 
       <!-- Hero -->
-      <div class="home-hero">
-        <img src="assets/Giant_Group_Logo_cropped.jpg" alt="GIANT GROUP" class="hero-logo" />
-        <h1 data-i18n="home_s1_welcome"></h1>
-        <p data-i18n="home_s1_p1"></p>
+      <div class="home-hero home-hero--split">
+        <div class="hero-content">
+          <img src="assets/Giant_Group_Logo_cropped.jpg" alt="GIANT GROUP" class="hero-logo" />
+          <h1 data-i18n="home_s1_welcome"></h1>
+          <p data-i18n="home_s1_p1"></p>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-fade"></div>
+          <img src="assets/giant from davinci.png" alt="" class="hero-davinci" />
+        </div>
       </div>
 
       <!-- 1. Introduction -->
