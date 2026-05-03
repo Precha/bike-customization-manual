@@ -27,11 +27,11 @@ window.i18n['en'] = {
   home_s1_heading : '1. Introduction',
   home_s1_welcome : 'Welcome to the Giant Custom Bike User Manual',
   home_s1_p1      : 'This manual is the official guide for the Giant Group Custom Bike platform — a fully integrated system that connects consumers, dealers, and Giant internal staff through the custom bike ordering journey.',
-  home_s1_p2      : 'The platform consists of two interconnected tools:',
+  home_s1_p2      : 'The platform consists of three interconnected tools:',
   home_s1_li1     : '<strong>Consumer Site</strong> — A public-facing web configurator where end customers browse Giant bike models, personalize their paint design, choose component upgrades, and place a custom order for pickup at their local Giant store.',
   home_s1_li2     : '<strong>Configuration Portal</strong> — A dealer and internal staff tool for tracking and managing the lifecycle of every custom bike order, from payment confirmation through to customer pickup.',
   home_s1_li3     : '<strong>Shopify</strong> <em>(GSC Staff Only)</em> — The e-commerce backend used by GSC internal staff to monitor orders, review payment details, add notes, and perform order management actions.',
-  home_s1_p3      : 'Together, these tools create a seamless end-to-end experience for customers and staff alike. This manual covers both tools with step-by-step instructions and annotated screenshots.',
+  home_s1_p3      : 'Together, these tools create a seamless end-to-end experience for customers and staff alike. This manual covers all three tools with step-by-step instructions and annotated screenshots.',
 
   /* 2. Target Audience */
   home_s2_heading : '2. Target Audience',
@@ -45,7 +45,7 @@ window.i18n['en'] = {
   home_s2_dealer_li1 : 'Use the <strong>Configuration Portal</strong> to view and manage orders placed at your store.',
   home_s2_dealer_li2 : 'Update order status when the bike is delivered to your store or collected by the customer.',
   home_s2_dealer_li3 : 'Add comments to coordinate with the Giant team on delivery or handling.',
-  home_s2_dealer_li4 : 'Access the system using your DCF account (email and password).',
+  home_s2_dealer_li4 : 'Access the system using your email address and password.',
   home_s2_consumer_heading : 'End Customers',
   home_s2_consumer_li1 : 'Use the <strong>Consumer Site</strong> to configure and order a custom Giant bike.',
   home_s2_consumer_li2 : 'Log in with a GiantID to place and track your order.',

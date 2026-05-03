@@ -29,11 +29,11 @@ window.i18n['nl'] = {
   home_s1_heading : '1. Inleiding',
   home_s1_welcome : 'Welkom bij de Giant Custom Bike gebruikershandleiding',
   home_s1_p1      : 'Deze handleiding is de officiële gids voor het Giant Group Custom Bike-platform — een volledig geïntegreerd systeem dat consumenten, dealers en Giant-medewerkers verbindt via het bestelproces voor een aangepaste fiets.',
-  home_s1_p2      : 'Het platform bestaat uit twee onderling verbonden tools:',
+  home_s1_p2      : 'Het platform bestaat uit drie onderling verbonden tools:',
   home_s1_li1     : '<strong>Consumentensite</strong> — Een publiekelijk toegankelijke webconfigurator waarmee eindklanten Giant-fietsmodellen kunnen bekijken, hun lakdesign kunnen personaliseren, componentupgrades kunnen kiezen en een aangepaste bestelling kunnen plaatsen voor afhaling bij hun lokale Giant-winkel.',
   home_s1_li2     : '<strong>Beheerdersportaal</strong> — Een tool voor dealers en interne medewerkers om de levenscyclus van elke aangepaste fietsbestelling bij te houden en te beheren, van betalingsbevestiging tot afhaling door de klant.',
   home_s1_li3     : '<strong>Shopify</strong> <em>(Alleen voor GSC-medewerkers)</em> — De e-commerce backend die door interne GSC-medewerkers wordt gebruikt om bestellingen te bewaken, betalingsdetails te bekijken, notities toe te voegen en bestellingbeheeracties uit te voeren.',
-  home_s1_p3      : 'Samen bieden deze tools een naadloze end-to-end ervaring voor zowel klanten als medewerkers. Deze handleiding behandelt beide tools met stapsgewijze instructies en geannoteerde screenshots.',
+  home_s1_p3      : 'Samen bieden deze tools een naadloze end-to-end ervaring voor zowel klanten als medewerkers. Deze handleiding behandelt alle drie de tools met stapsgewijze instructies en geannoteerde screenshots.',
 
   /* 2. Doelgroep */
   home_s2_heading : '2. Doelgroep',
@@ -47,7 +47,7 @@ window.i18n['nl'] = {
   home_s2_dealer_li1 : 'Gebruik het <strong>Beheerdersportaal</strong> om bestellingen in uw winkel te bekijken en te beheren.',
   home_s2_dealer_li2 : 'Werk de bestelstatus bij wanneer de fiets is afgeleverd in uw winkel of door de klant is opgehaald.',
   home_s2_dealer_li3 : 'Voeg opmerkingen toe om met het Giant-team te coördineren over levering of afhandeling.',
-  home_s2_dealer_li4 : 'Toegang tot het systeem met uw DCF-account (e-mailadres en wachtwoord).',
+  home_s2_dealer_li4 : 'Toegang tot het systeem met uw e-mailadres en wachtwoord.',
   home_s2_consumer_heading : 'Eindklanten',
   home_s2_consumer_li1 : 'Gebruik de <strong>Consumentensite</strong> om een aangepaste Giant-fiets te configureren en te bestellen.',
   home_s2_consumer_li2 : 'Log in met een GiantID om uw bestelling te plaatsen en bij te houden.',

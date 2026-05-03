@@ -29,11 +29,11 @@ window.i18n['zh-TW'] = {
   home_s1_heading : '1. 手冊概覽',
   home_s1_welcome : '歡迎使用 Giant 客製化自行車使用手冊',
   home_s1_p1      : '本手冊是 Giant Group 客製化自行車平台的官方使用指南——這是一套整合性系統，透過客製化自行車的訂購流程，將消費者、經銷商與 Giant 內部員工緊密串聯。',
-  home_s1_p2      : '平台由兩個相互連結的工具組成：',
+  home_s1_p2      : '平台由三個相互連結的工具組成：',
   home_s1_li1     : '<strong>消費者網站</strong>——面向公眾的線上配置器，終端客戶可在此瀏覽 Giant 車款、個性化設計烤漆、選擇零件升級，並下訂客製化訂單至指定的 Giant 門市取車。',
   home_s1_li2     : '<strong>訂單管理後台</strong>——供經銷商和 Giant 內部員工使用，用於追蹤和管理每一筆客製化訂單的完整生命週期，從確認付款到客戶取車。',
   home_s1_li3     : '<strong>Shopify</strong> <em>（僅限 GSC 人員）</em>——GSC 內部人員使用的電子商務後台，用於監控訂單、查看付款詳情、新增備註及執行訂單管理操作。',
-  home_s1_p3      : '這兩個工具共同為客戶和員工打造無縫的端對端體驗。本手冊涵蓋兩個工具的完整操作說明，並附有逐步截圖說明。',
+  home_s1_p3      : '這三個工具共同為客戶和員工打造無縫的端對端體驗。本手冊涵蓋三個工具的完整操作說明，並附有逐步截圖說明。',
 
   /* 2. 目標對象 */
   home_s2_heading : '2. 目標對象',
@@ -47,7 +47,7 @@ window.i18n['zh-TW'] = {
   home_s2_dealer_li1 : '使用 <strong>訂單管理後台</strong> 查看和管理在您門市下訂的訂單。',
   home_s2_dealer_li2 : '當腳踏車送達門市或客戶取車時，更新訂單狀態。',
   home_s2_dealer_li3 : '新增評論以協調 Giant 團隊處理交貨或特殊需求。',
-  home_s2_dealer_li4 : '使用 DCF 帳號（電子郵件和密碼）登入系統。',
+  home_s2_dealer_li4 : '使用電子郵件和密碼登入系統。',
   home_s2_consumer_heading : '終端客戶',
   home_s2_consumer_li1 : '使用 <strong>消費者網站</strong> 配置並訂購客製化 Giant 自行車。',
   home_s2_consumer_li2 : '以 GiantID 登入以下訂並追蹤訂單。',
