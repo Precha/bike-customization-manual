@@ -1,2 +1,4 @@
 .DS_Store
-fonts/
+fonts/overpass*
+fonts/overpass_web/
+fonts/open_sans/
