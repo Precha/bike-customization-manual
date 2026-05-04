@@ -13,6 +13,7 @@ window.i18n['zh-TW'] = {
   tab_consumer : '消費者網站',
   tab_config   : '訂單管理後台',
   tab_shopify  : 'Shopify（僅限 GSC）',
+  tab_faq      : 'FAQ',
   lang_label   : '語言',
 
   /* ══════════════════════════════════════════════════════════

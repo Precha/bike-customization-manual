@@ -11,6 +11,7 @@ window.i18n['en'] = {
   tab_consumer : 'Consumer Site',
   tab_config   : 'Configuration Portal',
   tab_shopify  : 'Shopify (GSC Only)',
+  tab_faq      : 'FAQ',
   lang_label   : 'Language',
 
   /* ══════════════════════════════════════════════════════════

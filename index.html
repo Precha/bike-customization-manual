@@ -16,6 +16,7 @@
   <script src="lang/fr.js"></script>
   <script src="config.js"></script>
   <script src="contact.js"></script>
+  <script src="faq.js"></script>
   <style>
     /* ── Open Sans font-face ────────────────────────────────── */
     @font-face { font-family: 'Open Sans'; src: url('fonts/OpenSans-Light.ttf') format('truetype'); font-weight: 300; font-style: normal; font-display: swap; }
@@ -407,6 +408,30 @@
     .support-row a { color: var(--red); text-decoration: none; word-break: break-all; }
     .support-row a:hover { text-decoration: underline; }
 
+    /* ── FAQ accordion ──────────────────────────────────────── */
+    #faq-list { padding: 0; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; text-align: left; padding: 16px 4px;
+      background: none; border: none; cursor: pointer;
+      font-size: 14.5px; font-weight: 600; color: var(--dark);
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; transition: color .15s;
+    }
+    .faq-q:hover { color: var(--red); }
+    .faq-icon {
+      font-size: 22px; font-weight: 300; color: var(--red);
+      flex-shrink: 0; transition: transform .22s ease;
+      line-height: 1;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      display: none; padding: 0 4px 16px;
+      color: var(--muted); line-height: 1.85; font-size: 14px;
+    }
+    .faq-item.open .faq-a { display: block; }
+
     /* ── Hamburger button (hidden on desktop) ───────────────── */
     #menu-btn {
       display: none;
@@ -624,6 +649,7 @@
   <button class="tab-btn"        data-tab="consumer" onclick="switchTab('consumer')" data-i18n="tab_consumer">Consumer Site</button>
   <button class="tab-btn"        data-tab="config"   onclick="switchTab('config')"   data-i18n="tab_config">Configuration Portal</button>
   <button class="tab-btn"        data-tab="shopify"  onclick="switchTab('shopify')"  data-i18n="tab_shopify">Shopify (GSC Only)</button>
+  <button class="tab-btn"        data-tab="faq"      onclick="switchTab('faq')"      data-i18n="tab_faq">FAQ</button>
 </div>
 
 <!-- ── Shell ────────────────────────────────────────────────── -->
@@ -672,6 +698,11 @@
       <a class="nav-item"        href="#sp-notes"     data-i18n="sp_nav_notes">6. Notes &amp; Timeline</a>
       <a class="nav-item"        href="#sp-edit"      data-i18n="sp_nav_edit">7. Editing an Order</a>
       <a class="nav-item"        href="#sp-actions"   data-i18n="sp_nav_actions">8. More Actions</a>
+    </div>
+
+    <!-- FAQ nav -->
+    <div class="nav-section" id="nav-faq">
+      <div id="faq-nav-list"></div>
     </div>
 
     <!-- Configuration Portal nav -->
@@ -1316,6 +1347,11 @@
 
     </div><!-- /panel-shopify -->
 
+    <!-- ════════════════ FAQ ════════════════ -->
+    <div class="tab-panel" id="panel-faq">
+      <div class="section" id="faq-list"></div>
+    </div><!-- /panel-faq -->
+
     <!-- ════════════════ CONFIGURATION PORTAL ════════════════ -->
     <div class="tab-panel" id="panel-config">
 
@@ -1527,6 +1563,36 @@
 </div><!-- /#shell -->
 
 <script>
+/* ── FAQ accordion (from faq.js) ───────────────────────────── */
+function applyFAQ(lang) {
+  var data = window.FAQ && (window.FAQ[lang] || window.FAQ['en']);
+  if (!data) return;
+  var list = document.getElementById('faq-list');
+  var nav  = document.getElementById('faq-nav-list');
+  if (!list) return;
+
+  list.innerHTML = data.map(function(item, i) {
+    return '<div class="faq-item" id="faq-' + i + '">'
+      + '<button class="faq-q" onclick="toggleFAQ(this)">'
+      + item.q
+      + '<span class="faq-icon">+</span>'
+      + '</button>'
+      + '<div class="faq-a">' + item.a + '</div>'
+      + '</div>';
+  }).join('');
+
+  if (nav) {
+    nav.innerHTML = data.map(function(item, i) {
+      return '<a class="nav-item" href="#faq-' + i + '" onclick="if(window.innerWidth<900)closeSidebar()">'
+        + item.q + '</a>';
+    }).join('');
+  }
+}
+
+function toggleFAQ(btn) {
+  btn.parentElement.classList.toggle('open');
+}
+
 /* ── Contacts injection (from contact.js) ──────────────────── */
 function applyContacts() {
   var tbody = document.getElementById('contacts-tbody');
@@ -1588,6 +1654,7 @@ function applyConfig() {
   }
 
   applyContacts();
+  applyFAQ(lang);
 }
 
 /* ── Password protection ───────────────────────────────────── */
@@ -1687,6 +1754,10 @@ function switchTab(tab) {
   if (first) first.classList.add('active');
 
   try { localStorage.setItem('preferred_tab', tab); } catch(e) {}
+  if (tab === 'faq') {
+    var lang = document.getElementById('lang-select').value;
+    applyFAQ(lang);
+  }
   if (window.innerWidth < 900) closeSidebar();
 }
 
