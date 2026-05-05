@@ -410,6 +410,13 @@
 
     /* ── FAQ accordion ──────────────────────────────────────── */
     #faq-list { padding: 0; }
+    .faq-section-header {
+      font-size: 12px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--red);
+      padding: 24px 4px 8px; margin-top: 4px;
+      border-bottom: 2px solid var(--red);
+    }
+    .faq-section-header:first-child { padding-top: 4px; }
     .faq-item { border-bottom: 1px solid var(--border); }
     .faq-item:first-child { border-top: 1px solid var(--border); }
     .faq-q {
@@ -1573,11 +1580,18 @@ function applyFAQ(lang) {
 
   var cfg = window.MANUAL_CONFIG || {};
   var itEmail = cfg.it_support_email || '';
+  var qIndex = 0;
 
-  list.innerHTML = data.map(function(item, i) {
+  list.innerHTML = data.map(function(item) {
+    /* Section header */
+    if (item.section) {
+      return '<div class="faq-section-header">' + item.section + '</div>';
+    }
+    /* Q&A accordion item */
+    var idx = qIndex++;
     var answer = item.a.replace(/\{\{it_support_email\}\}/g,
       itEmail ? '<a href="mailto:' + itEmail + '">' + itEmail + '</a>' : itEmail);
-    return '<div class="faq-item" id="faq-' + i + '">'
+    return '<div class="faq-item" id="faq-' + idx + '">'
       + '<button class="faq-q" onclick="toggleFAQ(this)">'
       + item.q
       + '<span class="faq-icon">+</span>'
@@ -1587,8 +1601,13 @@ function applyFAQ(lang) {
   }).join('');
 
   if (nav) {
-    nav.innerHTML = data.map(function(item, i) {
-      return '<a class="nav-item" href="#faq-' + i + '" onclick="if(window.innerWidth<900)closeSidebar()">'
+    var qIdx = 0;
+    nav.innerHTML = data.map(function(item) {
+      if (item.section) {
+        return '<div class="nav-group-label">' + item.section + '</div>';
+      }
+      var idx = qIdx++;
+      return '<a class="nav-item sub" href="#faq-' + idx + '" onclick="if(window.innerWidth<900)closeSidebar()">'
         + item.q + '</a>';
     }).join('');
   }
