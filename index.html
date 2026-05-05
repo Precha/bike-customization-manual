@@ -1607,7 +1607,7 @@ function applyFAQ(lang) {
         return '<div class="nav-group-label">' + item.section + '</div>';
       }
       var idx = qIdx++;
-      return '<a class="nav-item sub" href="#faq-' + idx + '" onclick="if(window.innerWidth<900)closeSidebar()">'
+      return '<a class="nav-item sub" href="#faq-' + idx + '" onclick="openFAQ(' + idx + ');if(window.innerWidth<900)closeSidebar()">'
         + item.q + '</a>';
     }).join('');
   }
@@ -1615,6 +1615,11 @@ function applyFAQ(lang) {
 
 function toggleFAQ(btn) {
   btn.parentElement.classList.toggle('open');
+}
+
+function openFAQ(idx) {
+  var item = document.getElementById('faq-' + idx);
+  if (item) item.classList.add('open');
 }
 
 /* ── Contacts injection (from contact.js) ──────────────────── */
