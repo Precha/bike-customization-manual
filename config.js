@@ -12,7 +12,8 @@ window.MANUAL_CONFIG = {
     'G!@nt2025',
     'GJ2026',
     'ilovegiant',
-    'iloveprecha'
+    'iloveprecha',
+    'Giant2026'
   ],
 
 
