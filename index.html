@@ -1620,6 +1620,7 @@ function toggleFAQ(btn) {
 function openFAQ(idx) {
   var item = document.getElementById('faq-' + idx);
   if (item) item.classList.add('open');
+  setActiveNav('faq-' + idx);
 }
 
 /* ── Contacts injection (from contact.js) ──────────────────── */
