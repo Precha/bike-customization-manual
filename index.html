@@ -1621,6 +1621,10 @@ function openFAQ(idx) {
   var item = document.getElementById('faq-' + idx);
   if (item) item.classList.add('open');
   setActiveNav('faq-' + idx);
+  /* Lock scroll-spy so smooth-scroll animation can't override the highlight */
+  spyLocked = true;
+  clearTimeout(spyLockTimer);
+  spyLockTimer = setTimeout(function() { spyLocked = false; }, 900);
 }
 
 /* ── Contacts injection (from contact.js) ──────────────────── */
@@ -1802,8 +1806,11 @@ function setActiveNav(id) {
 }
 
 var spyTimer;
+var spyLocked = false;
+var spyLockTimer;
 window.addEventListener('scroll', function() {
   clearTimeout(spyTimer);
+  if (spyLocked) return;
   spyTimer = setTimeout(function() {
     var panel = document.getElementById('panel-' + currentTab);
     if (!panel) return;
