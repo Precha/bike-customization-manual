@@ -1571,13 +1571,18 @@ function applyFAQ(lang) {
   var nav  = document.getElementById('faq-nav-list');
   if (!list) return;
 
+  var cfg = window.MANUAL_CONFIG || {};
+  var itEmail = cfg.it_support_email || '';
+
   list.innerHTML = data.map(function(item, i) {
+    var answer = item.a.replace(/\{\{it_support_email\}\}/g,
+      itEmail ? '<a href="mailto:' + itEmail + '">' + itEmail + '</a>' : itEmail);
     return '<div class="faq-item" id="faq-' + i + '">'
       + '<button class="faq-q" onclick="toggleFAQ(this)">'
       + item.q
       + '<span class="faq-icon">+</span>'
       + '</button>'
-      + '<div class="faq-a">' + item.a + '</div>'
+      + '<div class="faq-a">' + answer + '</div>'
       + '</div>';
   }).join('');
 
@@ -1654,7 +1659,6 @@ function applyConfig() {
   }
 
   applyContacts();
-  applyFAQ(lang);
 }
 
 /* ── Password protection ───────────────────────────────────── */
@@ -1727,6 +1731,7 @@ function switchLang(lang) {
   try { localStorage.setItem('preferred_lang', lang); } catch(e) {}
   /* re-apply config after lang switch (labels may have changed) */
   applyConfig();
+  applyFAQ(lang);
 }
 
 /* ── Tab switch ────────────────────────────────────────────── */
