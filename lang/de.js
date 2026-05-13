@@ -13,6 +13,7 @@ window.i18n['de'] = {
   tab_consumer : 'Verbraucherseite',
   tab_config   : 'Bestellverwaltungsportal',
   tab_shopify  : 'Shopify (nur GSC)',
+  tab_faq      : 'FAQ',
   lang_label   : 'Sprache',
 
   /* ══════════════════════════════════════════════════════════

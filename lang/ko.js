@@ -13,6 +13,7 @@ window.i18n['ko'] = {
   tab_consumer : '소비자 사이트',
   tab_config   : '주문 관리 포털',
   tab_shopify  : 'Shopify (GSC 전용)',
+  tab_faq      : 'FAQ',
   lang_label   : '언어',
 
   /* ══════════════════════════════════════════════════════════

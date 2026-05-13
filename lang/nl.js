@@ -13,6 +13,7 @@ window.i18n['nl'] = {
   tab_consumer : 'Consumentensite',
   tab_config   : 'Beheerdersportaal',
   tab_shopify  : 'Shopify (Alleen GSC)',
+  tab_faq      : 'FAQ',
   lang_label   : 'Taal',
 
   /* ══════════════════════════════════════════════════════════
