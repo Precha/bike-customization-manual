@@ -1835,6 +1835,9 @@ function switchLang(lang) {
 var currentTab = 'home';
 
 function switchTab(tab) {
+  if (tab === 'shopify' && document.body.classList.contains('role-store')) {
+    tab = 'home';
+  }
   currentTab = tab;
 
   /* panels */
