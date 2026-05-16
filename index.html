@@ -1896,14 +1896,28 @@ window.addEventListener('scroll', function() {
   }, 60);
 }, { passive: true });
 
+/* ── Language auto-detection ───────────────────────────────── */
+function resolveInitialLang() {
+  var supported = ['en', 'zh-TW', 'ja', 'nl', 'ko', 'th', 'de', 'fr'];
+  try {
+    var saved = localStorage.getItem('preferred_lang');
+    if (saved && supported.indexOf(saved) !== -1) return saved;
+  } catch(e) {}
+  var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+  var lower = nav.toLowerCase();
+  if (lower.startsWith('zh')) return 'zh-TW';
+  var prefix = lower.split('-')[0];
+  var direct = ['ja', 'nl', 'ko', 'th', 'de', 'fr'];
+  if (direct.indexOf(prefix) !== -1) return prefix;
+  return 'en';
+}
+
 /* ── Init ──────────────────────────────────────────────────── */
 (function() {
-  var lang = 'en';
+  var lang = resolveInitialLang();
   var tab  = 'home';
   try {
-    var sl = localStorage.getItem('preferred_lang');
     var st = localStorage.getItem('preferred_tab');
-    if (sl && window.i18n && window.i18n[sl]) lang = sl;
     if (st) tab = st;
   } catch(e) {}
 
