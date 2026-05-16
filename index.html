@@ -1738,20 +1738,21 @@ function applyRole(role) {
   document.body.classList.remove('role-gsc', 'role-store');
   document.body.classList.add('role-' + role);
   try { localStorage.setItem('gbm_role', role); } catch(e) {}
-  if (role === 'store' && typeof currentTab !== 'undefined' && currentTab === 'shopify') {
+  if (role === 'store' && currentTab === 'shopify') {
     switchTab('home');
   }
 }
 
 function switchRole() {
   try { localStorage.removeItem('gbm_role'); } catch(e) {}
-  sessionStorage.removeItem('gbm_auth');
+  try { sessionStorage.removeItem('gbm_auth'); } catch(e) {}
   location.reload();
 }
 
 (function() {
-  var auth = sessionStorage.getItem('gbm_auth') === '1';
+  var auth = false;
   var role = null;
+  try { auth = sessionStorage.getItem('gbm_auth') === '1'; } catch(e) {}
   try { role = localStorage.getItem('gbm_role'); } catch(e) {}
 
   if (auth && role) {
@@ -1784,7 +1785,7 @@ function checkPassword() {
   }
 
   if (passwords.indexOf(entered) !== -1) {
-    sessionStorage.setItem('gbm_auth', '1');
+    try { sessionStorage.setItem('gbm_auth', '1'); } catch(e) {}
     document.body.style.overflow = '';
     applyRole(_selectedRole);
     overlay.classList.add('hidden');
