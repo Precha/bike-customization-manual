@@ -54,10 +54,6 @@ window.FAQ = {
       a: 'Open the order from the Orders Dashboard by clicking <strong>Edit</strong> next to it. At the top of the order detail page, click the status dropdown, select the new status, and click <strong>Save</strong>.'
     },
     {
-      q: 'How do I modify an order after it has been placed?',
-      a: 'Log in to the Configuration Portal, find the order in the Orders Dashboard, and click <strong>Edit</strong> to open the order detail page where you can make changes.'
-    },
-    {
       q: 'A customer wants to cancel their order. How do I cancel it?',
       a: 'To cancel an order, please notify your <strong>GSC representative</strong>. Do not attempt to cancel orders directly without authorization.'
     },
@@ -67,7 +63,7 @@ window.FAQ = {
     },
     {
       q: 'Who do I contact for order-related issues?',
-      a: 'For order-related inquiries (e.g., payment disputes, shipping delays), please contact the relevant market representative listed in the <strong>Contact & Support</strong> section on the Home tab.'
+      a: 'For order-related inquiries (e.g., payment disputes, shipping delays), please contact the relevant market representative listed in the <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">Contact &amp; Support</a></strong> section on the Home tab.'
     },
 
   ],
@@ -115,10 +111,6 @@ window.FAQ = {
       a: '在訂單儀表板中點擊訂單旁的 <strong>「編輯」</strong> 開啟訂單詳情頁面。在頁面頂部點擊狀態下拉選單，選擇新狀態後點擊 <strong>「儲存」</strong> 即可。'
     },
     {
-      q: '訂單建立後，如何修改訂單？',
-      a: '登入 Configuration Portal，在訂單儀表板中找到該訂單，點擊 <strong>Edit</strong> 開啟訂單詳情頁面進行修改。'
-    },
-    {
       q: '客人要取消訂單，該如何取消？',
       a: '取消訂單請通知各 <strong>GSC 負責人</strong>，請勿自行取消訂單。'
     },
@@ -128,7 +120,7 @@ window.FAQ = {
     },
     {
       q: '訂單相關問題要找誰？',
-      a: '如有訂單相關查詢（例如付款爭議、出貨延誤），請聯繫首頁 <strong>「聯繫支援」</strong> 區塊中對應市場的負責人。'
+      a: '如有訂單相關查詢（例如付款爭議、出貨延誤），請聯繫首頁 <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">「聯繫支援」</a></strong> 區塊中對應市場的負責人。'
     },
 
   ],
@@ -174,10 +166,6 @@ window.FAQ = {
       a: '注文ダッシュボードで該当注文の横の <strong>「編集」</strong> をクリックして注文詳細ページを開きます。ページ上部のステータスドロップダウンをクリックし、新しいステータスを選択して <strong>「保存」</strong> をクリックしてください。'
     },
     {
-      q: '注文が作成された後に変更するにはどうすればよいですか？',
-      a: 'Configuration Portal にログインし、注文ダッシュボードで該当注文を見つけ、<strong>「Edit」</strong> をクリックして注文詳細ページを開き、変更を行ってください。'
-    },
-    {
       q: 'お客様が注文をキャンセルしたい場合はどうすればよいですか？',
       a: '注文のキャンセルは担当の <strong>GSC 担当者</strong> にご連絡ください。無断でキャンセル操作を行わないでください。'
     },
@@ -187,7 +175,7 @@ window.FAQ = {
     },
     {
       q: '注文に関する問題はどこに連絡すればよいですか？',
-      a: '注文に関するお問い合わせ（支払い紛争、配送遅延など）については、ホームタブの <strong>「連絡先・サポート」</strong> セクションに記載されている各市場の担当者にお問い合わせください。'
+      a: '注文に関するお問い合わせ（支払い紛争、配送遅延など）については、ホームタブの <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">「連絡先・サポート」</a></strong> セクションに記載されている各市場の担当者にお問い合わせください。'
     },
 
   ],
@@ -233,10 +221,6 @@ window.FAQ = {
       a: 'Open de bestelling vanuit het Dashboard door naast de bestelling op <strong>Bewerken</strong> te klikken. Klik bovenaan de bestelpagina op het statusmenu, selecteer de nieuwe status en klik op <strong>Opslaan</strong>.'
     },
     {
-      q: 'Hoe kan ik een bestelling aanpassen nadat deze is geplaatst?',
-      a: 'Log in op het Configuratieportaal, zoek de bestelling in het Dashboard en klik op <strong>Bewerken</strong> om de detailpagina van de bestelling te openen waar u wijzigingen kunt aanbrengen.'
-    },
-    {
       q: 'Een klant wil zijn bestelling annuleren. Hoe annuleer ik deze?',
       a: 'Om een bestelling te annuleren, informeer uw <strong>GSC-vertegenwoordiger</strong>. Probeer geen bestellingen zonder toestemming te annuleren.'
     },
@@ -246,7 +230,7 @@ window.FAQ = {
     },
     {
       q: 'Bij wie kan ik terecht voor bestelling-gerelateerde problemen?',
-      a: 'Voor bestelling-gerelateerde vragen (bijv. betalingsgeschillen, vertragingen in de verzending) kunt u contact opnemen met de relevante marktvertegenwoordiger in de sectie <strong>Contact & Ondersteuning</strong> op het tabblad Home.'
+      a: 'Voor bestelling-gerelateerde vragen (bijv. betalingsgeschillen, vertragingen in de verzending) kunt u contact opnemen met de relevante marktvertegenwoordiger in de sectie <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">Contact &amp; Ondersteuning</a></strong> op het tabblad Home.'
     },
 
   ],
@@ -292,10 +276,6 @@ window.FAQ = {
       a: '주문 옆의 <strong>편집</strong>을 클릭하여 주문 대시보드에서 주문을 엽니다. 주문 상세 페이지 상단에서 상태 드롭다운을 클릭하고, 새 상태를 선택한 후 <strong>저장</strong>을 클릭하세요.'
     },
     {
-      q: '주문이 접수된 후 어떻게 수정하나요?',
-      a: 'Configuration Portal에 로그인하여 주문 대시보드에서 해당 주문을 찾고 <strong>편집</strong>을 클릭하여 주문 상세 페이지를 열고 변경 사항을 적용하세요.'
-    },
-    {
       q: '고객이 주문을 취소하려고 합니다. 어떻게 취소하나요?',
       a: '주문 취소는 <strong>GSC 담당자</strong>에게 알려주세요. 허가 없이 주문을 직접 취소하지 마세요.'
     },
@@ -305,7 +285,7 @@ window.FAQ = {
     },
     {
       q: '주문 관련 문제가 있을 때 누구에게 연락해야 하나요?',
-      a: '주문 관련 문의(예: 결제 분쟁, 배송 지연)는 홈 탭의 <strong>연락처 및 지원</strong> 섹션에 나열된 해당 시장 담당자에게 연락하세요.'
+      a: '주문 관련 문의(예: 결제 분쟁, 배송 지연)는 홈 탭의 <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">연락처 및 지원</a></strong> 섹션에 나열된 해당 시장 담당자에게 연락하세요.'
     },
 
   ],
@@ -351,10 +331,6 @@ window.FAQ = {
       a: 'เปิดคำสั่งซื้อจาก Orders Dashboard โดยคลิก <strong>แก้ไข</strong> ที่อยู่ถัดจากคำสั่งซื้อ ที่ด้านบนของหน้าคำสั่งซื้อ คลิกเมนูแบบเลื่อนลงสถานะ เลือกสถานะใหม่ แล้วคลิก <strong>บันทึก</strong>'
     },
     {
-      q: 'วิธีแก้ไขคำสั่งซื้อหลังจากสั่งซื้อแล้ว?',
-      a: 'เข้าสู่ระบบ Configuration Portal ค้นหาคำสั่งซื้อใน Orders Dashboard แล้วคลิก <strong>แก้ไข</strong> เพื่อเปิดหน้าคำสั่งซื้อและทำการเปลี่ยนแปลง'
-    },
-    {
       q: 'ลูกค้าต้องการยกเลิกคำสั่งซื้อ จะยกเลิกอย่างไร?',
       a: 'หากต้องการยกเลิกคำสั่งซื้อ กรุณาแจ้ง<strong>ผู้ดูแล GSC</strong> ของคุณ อย่าพยายามยกเลิกคำสั่งซื้อโดยตรงโดยไม่ได้รับอนุญาต'
     },
@@ -364,7 +340,7 @@ window.FAQ = {
     },
     {
       q: 'ควรติดต่อใครสำหรับปัญหาเกี่ยวกับคำสั่งซื้อ?',
-      a: 'สำหรับข้อสอบถามเกี่ยวกับคำสั่งซื้อ (เช่น ข้อพิพาทการชำระเงิน ความล่าช้าในการจัดส่ง) กรุณาติดต่อผู้แทนตลาดที่เกี่ยวข้องที่ระบุไว้ในส่วน <strong>ติดต่อและสนับสนุน</strong> บนแท็บหน้าแรก'
+      a: 'สำหรับข้อสอบถามเกี่ยวกับคำสั่งซื้อ (เช่น ข้อพิพาทการชำระเงิน ความล่าช้าในการจัดส่ง) กรุณาติดต่อผู้แทนตลาดที่เกี่ยวข้องที่ระบุไว้ในส่วน <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">ติดต่อและสนับสนุน</a></strong> บนแท็บหน้าแรก'
     },
 
   ],
@@ -410,10 +386,6 @@ window.FAQ = {
       a: 'Öffnen Sie die Bestellung aus dem Bestelldashboard, indem Sie neben der Bestellung auf <strong>Bearbeiten</strong> klicken. Klicken Sie oben auf der Bestelldetailseite auf das Status-Dropdown, wählen Sie den neuen Status aus und klicken Sie auf <strong>Speichern</strong>.'
     },
     {
-      q: 'Wie ändere ich eine Bestellung nach der Aufgabe?',
-      a: 'Melden Sie sich im Konfigurationsportal an, finden Sie die Bestellung im Bestelldashboard und klicken Sie auf <strong>Bearbeiten</strong>, um die Bestelldetailseite zu öffnen und Änderungen vorzunehmen.'
-    },
-    {
       q: 'Ein Kunde möchte seine Bestellung stornieren. Wie storniere ich sie?',
       a: 'Um eine Bestellung zu stornieren, benachrichtigen Sie bitte Ihren <strong>GSC-Vertreter</strong>. Versuchen Sie nicht, Bestellungen ohne Genehmigung direkt zu stornieren.'
     },
@@ -423,7 +395,7 @@ window.FAQ = {
     },
     {
       q: 'An wen wende ich mich bei bestellungsbezogenen Problemen?',
-      a: 'Für bestellungsbezogene Anfragen (z. B. Zahlungsstreitigkeiten, Lieferverzögerungen) wenden Sie sich bitte an den entsprechenden Marktvertreter im Abschnitt <strong>Kontakt & Support</strong> auf der Registerkarte „Startseite".'
+      a: 'Für bestellungsbezogene Anfragen (z. B. Zahlungsstreitigkeiten, Lieferverzögerungen) wenden Sie sich bitte an den entsprechenden Marktvertreter im Abschnitt <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">Kontakt &amp; Support</a></strong> auf der Registerkarte „Startseite".'
     },
 
   ],
@@ -469,10 +441,6 @@ window.FAQ = {
       a: 'Ouvrez la commande depuis le tableau de bord des commandes en cliquant sur <strong>Modifier</strong> à côté de la commande. En haut de la page de détail de la commande, cliquez sur le menu déroulant de statut, sélectionnez le nouveau statut et cliquez sur <strong>Enregistrer</strong>.'
     },
     {
-      q: 'Comment modifier une commande après sa passation ?',
-      a: 'Connectez-vous au Portail de Configuration, trouvez la commande dans le tableau de bord et cliquez sur <strong>Modifier</strong> pour ouvrir la page de détail de la commande et apporter des modifications.'
-    },
-    {
       q: 'Un client souhaite annuler sa commande. Comment l\'annuler ?',
       a: 'Pour annuler une commande, veuillez informer votre <strong>représentant GSC</strong>. N\'essayez pas d\'annuler des commandes directement sans autorisation.'
     },
@@ -482,7 +450,7 @@ window.FAQ = {
     },
     {
       q: 'Qui contacter pour les problèmes liés aux commandes ?',
-      a: 'Pour les demandes liées aux commandes (par ex., litiges de paiement, retards d\'expédition), veuillez contacter le représentant du marché concerné dans la section <strong>Contact & Support</strong> de l\'onglet Accueil.'
+      a: 'Pour les demandes liées aux commandes (par ex., litiges de paiement, retards d\'expédition), veuillez contacter le représentant du marché concerné dans la section <strong><a href="https://precha.github.io/bike-customization-manual/#home-support" target="_blank">Contact &amp; Support</a></strong> de l\'onglet Accueil.'
     },
 
   ],
