@@ -1724,19 +1724,46 @@ function applyConfig() {
   applyContacts();
 }
 
-/* ── Password protection ───────────────────────────────────── */
+/* ── Password + Role protection ────────────────────────────── */
+var _selectedRole = null;
+
+function selectRole(role) {
+  _selectedRole = role;
+  document.getElementById('role-btn-gsc').classList.toggle('selected', role === 'gsc');
+  document.getElementById('role-btn-store').classList.toggle('selected', role === 'store');
+  document.getElementById('pw-error').textContent = '';
+}
+
+function applyRole(role) {
+  document.body.classList.remove('role-gsc', 'role-store');
+  document.body.classList.add('role-' + role);
+  try { localStorage.setItem('gbm_role', role); } catch(e) {}
+  if (role === 'store' && typeof currentTab !== 'undefined' && currentTab === 'shopify') {
+    switchTab('home');
+  }
+}
+
+function switchRole() {
+  try { localStorage.removeItem('gbm_role'); } catch(e) {}
+  sessionStorage.removeItem('gbm_auth');
+  location.reload();
+}
+
 (function() {
-  var SESSION_KEY = 'gbm_auth';
-  if (sessionStorage.getItem(SESSION_KEY) === '1') {
-    /* Already authenticated this session — hide overlay immediately */
+  var auth = sessionStorage.getItem('gbm_auth') === '1';
+  var role = null;
+  try { role = localStorage.getItem('gbm_role'); } catch(e) {}
+
+  if (auth && role) {
     var ov = document.getElementById('pw-overlay');
     if (ov) ov.style.display = 'none';
+    applyRole(role);
     return;
   }
-  /* Prevent scrolling while overlay is shown */
+
   document.body.style.overflow = 'hidden';
-  /* Focus the input */
   window.addEventListener('load', function() {
+    if (role) selectRole(role);
     var inp = document.getElementById('pw-input');
     if (inp) inp.focus();
   });
@@ -1751,9 +1778,15 @@ function checkPassword() {
   var errEl   = document.getElementById('pw-error');
   var overlay = document.getElementById('pw-overlay');
 
+  if (!_selectedRole) {
+    errEl.textContent = 'Please select your role.';
+    return;
+  }
+
   if (passwords.indexOf(entered) !== -1) {
     sessionStorage.setItem('gbm_auth', '1');
     document.body.style.overflow = '';
+    applyRole(_selectedRole);
     overlay.classList.add('hidden');
     setTimeout(function() { overlay.style.display = 'none'; }, 420);
   } else {
