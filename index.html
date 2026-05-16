@@ -645,7 +645,11 @@
   <div id="pw-box">
     <img src="assets/Giant_Group_Logo_RGB_cropped.jpg" alt="GIANT GROUP" />
     <h2>Giant Custom Bike Manual</h2>
-    <p>Enter the password to access this manual.</p>
+    <p>Select your role and enter the password.</p>
+    <div id="role-selector">
+      <button class="role-btn" id="role-btn-gsc"   onclick="selectRole('gsc')">GSC Employee</button>
+      <button class="role-btn" id="role-btn-store" onclick="selectRole('store')">Store Employee</button>
+    </div>
     <div id="pw-input-wrap">
       <input type="password" id="pw-input" placeholder="Password"
              onkeydown="if(event.key==='Enter')checkPassword()" />
@@ -677,6 +681,7 @@
     <option value="de">Deutsch</option>
     <option value="fr">Français</option>
   </select>
+  <button id="switch-role-btn" onclick="switchRole()">Switch Role</button>
 </div>
 
 <!-- ── Tab bar ──────────────────────────────────────────────── -->
