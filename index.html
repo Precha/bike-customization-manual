@@ -612,7 +612,8 @@
       background: #fff; cursor: pointer;
       transition: border-color .2s, color .2s, background .2s;
     }
-    .role-btn:hover { border-color: #045EB9; color: #045EB9; }
+    .role-btn:hover,
+    .role-btn:focus-visible { border-color: #045EB9; color: #045EB9; outline: none; }
     .role-btn.selected { border-color: #045EB9; background: #045EB9; color: #fff; }
 
     /* ── Switch Role (topbar) ───────────────────────────────────── */
@@ -621,7 +622,8 @@
       font-size: 12px; color: #aaa; padding: 4px 8px;
       transition: color .15s; white-space: nowrap;
     }
-    #switch-role-btn:hover { color: #fff; }
+    #switch-role-btn:hover,
+    #switch-role-btn:focus-visible { color: #fff; outline: none; }
 
     /* ── Store Employee: hide Shopify elements ──────────────── */
     body.role-store [data-tab="shopify"],
