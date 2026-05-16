@@ -19,8 +19,8 @@ window.MANUAL_CONFIG = {
 
   /* ── 版本資訊 / Version Info ─────────────────────────────── */
   manual_version  : '1.0',
-  last_updated    : '2026-05-02',      /* 格式 YYYY-MM-DD */
-  website_version : '1.0.0',           /* 對應的網站版本 */
+  last_updated    : '2026-05-16',      /* 格式 YYYY-MM-DD */
+  website_version : '1.1.0',           /* 對應的網站版本 */
   release_notes   : '',                /* 選填：版本更新說明 */
 
   /* ── 聯繫支援 / Support Contacts ────────────────────────── */

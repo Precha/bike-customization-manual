@@ -7,9 +7,10 @@
 
 window.CONTACTS = [
   { market: 'GB',                  name: 'Christian Stokman',   email: 'cstokman@giant-europe.com'      },
+  { market: 'GESCs',               name: 'Violet Liu',          email: 'vliu@giant-europe.com'          },
   { market: 'GF',                  name: 'Angélique Rey',        email: 'arey@giant.fr'                  },
   { market: 'GG',                  name: 'Katherina Winklbauer', email: 'kwinklbauer@giant-bikes.de'     },
-  { market: 'GHS',                 name: 'Anna Fördős',          email: 'afordos@giant-bicycles.hu'      },
+  { market: 'GHS',                 name: 'Gabor Forgacs',        email: 'gforgacs@giant-bicycles.hu'      },
   { market: 'Giant International', name: 'Eric Tai',             email: 'erictai@giant.com.tw'           },
   { market: 'GJ',                  name: 'Takashi Nishikawa',    email: 'takashi.nishikawa@giant.co.jp'  },
   { market: 'GTS',                 name: '賴建炘',                email: 'hsinlai@giant.com.tw'           },
