@@ -12,7 +12,7 @@ window.i18n['nl'] = {
   tab_home     : 'Home',
   tab_consumer : 'Consumentensite',
   tab_config   : 'Beheerdersportaal',
-  tab_shopify  : 'Shopify (Alleen GSC)',
+  tab_shopify  : 'Shopify (Alleen systeembeheerder/GMC)',
   tab_faq      : 'FAQ',
   lang_label   : 'Taal',
 

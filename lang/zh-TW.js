@@ -12,7 +12,7 @@ window.i18n['zh-TW'] = {
   tab_home     : '首頁',
   tab_consumer : '消費者網站',
   tab_config   : '訂單管理後台',
-  tab_shopify  : 'Shopify（僅限 GSC）',
+  tab_shopify  : 'Shopify（僅限系統管理員/GMC）',
   tab_faq      : 'FAQ',
   lang_label   : '語言',
 

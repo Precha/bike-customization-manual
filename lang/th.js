@@ -12,7 +12,7 @@ window.i18n['th'] = {
   tab_home     : 'หน้าแรก',
   tab_consumer : 'เว็บไซต์ผู้บริโภค',
   tab_config   : 'พอร์ทัลจัดการคำสั่งซื้อ',
-  tab_shopify  : 'Shopify (เฉพาะ GSC)',
+  tab_shopify  : 'Shopify (เฉพาะผู้ดูแลระบบ/GMC)',
   tab_faq      : 'FAQ',
   lang_label   : 'ภาษา',
 

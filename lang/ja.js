@@ -12,7 +12,7 @@ window.i18n['ja'] = {
   tab_home     : 'ホーム',
   tab_consumer : 'コンシューマーサイト',
   tab_config   : '注文管理ポータル',
-  tab_shopify  : 'Shopify（GSC 限定）',
+  tab_shopify  : 'Shopify（システム管理者/GMC 限定）',
   tab_faq      : 'FAQ',
   lang_label   : '言語',
 
