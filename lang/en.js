@@ -37,7 +37,7 @@ window.i18n['en'] = {
   /* 2. Target Audience */
   home_s2_heading : '2. Target Audience',
   home_s2_p1      : 'This manual is intended for the following groups:',
-  home_s2_gsc_heading  : 'GSC Staff (Giant Service Center / Internal)',
+  home_s2_gsc_heading  : 'GSC Staff (Giant Sales Companies / Internal)',
   home_s2_gsc_li1 : 'Use the <strong>Configuration Portal</strong> to monitor all custom bike orders across the dealer network.',
   home_s2_gsc_li2 : 'Update order statuses at each fulfillment milestone (payment, delivery, pickup).',
   home_s2_gsc_li3 : 'Leave internal comments and coordinate with dealer stores.',
@@ -219,25 +219,25 @@ window.i18n['en'] = {
 
   /* 9. Login */
   cs_s9_heading : '9. Login',
-  cs_s9_p1      : 'When you click <strong>"ADD TO CART"</strong> from the Summary page, you are prompted to log in with a <strong>GiantID</strong> before checkout can proceed.',
-  cs_s9_p2      : '<strong>Why login is required:</strong> GiantID is used to save and retrieve your bike customization details, place your order, and track it after purchase.',
-  cs_s9_li1     : 'On the login prompt page, click <strong>"Login via GIANT"</strong>.',
-  cs_s9_li2     : 'You will be redirected to the Giant Group identity portal.',
-  cs_s9_li3     : 'Enter your GiantID email address and password, then click <strong>"Log in"</strong>.',
-  cs_s9_li4     : 'If you do not have a GiantID, you can create one from the same portal.',
-  cs_s9_fig1    : 'Figure 17 — Login prompt: "Login via GIANT" button',
-  cs_s9_fig2    : 'Figure 18 — GiantID password entry',
+  cs_s9_p1      : 'When you click <strong>"ADD TO CART"</strong> from the Summary page, the Retailer is prompted to sign in with a <strong>GAC (Giant Account)</strong> before checkout can proceed.',
+  cs_s9_p2      : '<strong>Why login is required:</strong> The GAC account is used to verify identity, save and retrieve the bike customization details, submit the order, and track it after purchase.',
+  cs_s9_li1     : 'You will be redirected to the Giant Group authentication portal.',
+  cs_s9_li2     : 'Sign in with your <strong>GAC</strong> account — the same username and password used for the Configuration Portal or DCF.',
+  cs_s9_li3     : 'If you have forgotten your password, click <strong>"Forgot your password?"</strong> to reset it.',
+  cs_s9_fig1    : 'Figure 17 — Signing in with a GAC account',
 
   /* 10. Checkout */
   cs_s10_heading : '10. Checkout',
-  cs_s10_p1      : 'After logging in, you are taken to the checkout page. Your custom bike configuration is shown in the order summary on the right.',
-  cs_s10_p2      : 'Complete the following fields to place your order:',
-  cs_s10_li1     : '<strong>Pickup Location</strong> — Select your nearest Giant authorized store. Pickup in store is free.',
-  cs_s10_li2     : '<strong>Payment Method</strong> — Select <em>"Payment in the store"</em> to pay when you collect the bike.',
-  cs_s10_li3     : '<strong>Billing Address</strong> — Confirm or enter your billing address (name, street, postal code, city, country).',
+  cs_s10_p1      : 'After signing in, the Retailer is taken to the checkout page. The custom bike configuration is shown in the order summary on the right.',
+  cs_s10_p2      : 'Complete the following fields to place the order:',
+  cs_s10_li1     : '<strong>End Customer Info</strong> — Enter the end customer\'s first name, last name, email, and phone number.',
+  cs_s10_li2     : '<strong>Pickup Location</strong> — Select the nearest Giant authorized store. Pickup in store is free.',
+  cs_s10_li3     : '<strong>Payment Method</strong> — Select <em>"Payment in the store"</em> to pay when the customer collects the bike.',
+  cs_s10_li4     : '<strong>Billing Address</strong> — Confirm or enter the billing address (name, street, postal code, city, country).',
+  cs_s10_li5     : '<strong>Remark</strong> — Optional. Use this field to note any special requests from the end customer (up to 1000 characters).',
   cs_s10_p3      : 'Review the order summary on the right, which lists all configuration details and the total price (subtotal + taxes). Click <strong>"Complete Purchase"</strong> to finalize.',
-  cs_s10_fig1    : 'Figure 19 — Checkout page: store selection and payment',
-  cs_s10_fig2    : 'Figure 20 — Checkout page: billing address and total',
+  cs_s10_fig1    : 'Figure 18 — Checkout page: end customer info, store selection, and payment',
+  cs_s10_fig2    : 'Figure 19 — Checkout page: billing address, remark, and total',
 
   /* 11. Order Confirmation */
   cs_s11_heading : '11. Order Confirmation',
@@ -245,11 +245,10 @@ window.i18n['en'] = {
   cs_s11_li1     : 'A <strong>confirmation number</strong> (e.g., #8MI205UL) and a thank-you message.',
   cs_s11_li2     : 'A <strong>map</strong> showing the pickup store location.',
   cs_s11_li3     : 'A message confirming that an email will be sent when the order is ready for pickup.',
-  cs_s11_li4     : 'An option to <strong>Get pickup notifications</strong> via the Giant Shop app.',
-  cs_s11_li5     : '<strong>Order details</strong> — Contact info, pickup location (address and phone), payment method, and billing address.',
+  cs_s11_li4     : '<strong>Order details</strong> — Contact info, pickup location (address and phone), payment method, and billing address.',
   cs_s11_p2      : 'A complete order summary with all configuration details is displayed on the right side. Click <strong>"Continue shopping"</strong> to return to the Giant website.',
-  cs_s11_fig1    : 'Figure 21 — Order confirmation: thank you page with map',
-  cs_s11_fig2    : 'Figure 22 — Order confirmation: full order details',
+  cs_s11_fig1    : 'Figure 20 — Order confirmation: thank you page with map',
+  cs_s11_fig2    : 'Figure 21 — Order confirmation: full order details',
 
   /* ══════════════════════════════════════════════════════════
      CONFIGURATION PORTAL
@@ -405,7 +404,7 @@ window.i18n['en'] = {
   /* Cover banner */
   sp_cover_title   : 'Shopify Order Management',
   sp_cover_sub     : 'GSC Staff Only',
-  sp_cover_desc    : 'This section is intended for Giant Service Center (GSC) internal staff only. It covers how to monitor and manage Giant EU custom bike orders through the Shopify platform.',
+  sp_cover_desc    : 'This section is intended for Giant Sales Companies (GSC) internal staff only. It covers how to monitor and manage Giant EU custom bike orders through the Shopify platform.',
 
   /* 1. Overview */
   sp_s1_heading : '1. Overview',

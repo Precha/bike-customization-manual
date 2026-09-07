@@ -39,7 +39,7 @@ window.i18n['ja'] = {
   /* 2. 対象ユーザー */
   home_s2_heading : '2. 対象ユーザー',
   home_s2_p1      : '本マニュアルは以下の方を対象としています：',
-  home_s2_gsc_heading  : 'GSC スタッフ（Giant サービスセンター／社内）',
+  home_s2_gsc_heading  : 'GSC スタッフ（Giant セールスカンパニー／社内）',
   home_s2_gsc_li1 : '<strong>注文管理ポータル</strong>を使用して、販売店ネットワーク全体のすべてのカスタムバイク注文を監視する。',
   home_s2_gsc_li2 : '各フルフィルメントのマイルストーン（支払い・配送・受け取り）で注文ステータスを更新する。',
   home_s2_gsc_li3 : '内部コメントを残し、販売店と調整する。',
@@ -221,25 +221,25 @@ window.i18n['ja'] = {
 
   /* 9. ログイン */
   cs_s9_heading : '9. ログイン',
-  cs_s9_p1      : '確認ページから <strong>「ADD TO CART」</strong>をクリックすると、チェックアウトを続行する前に <strong>GiantID</strong> でのログインを求めるプロンプトが表示されます。',
-  cs_s9_p2      : '<strong>ログインが必要な理由：</strong>GiantID は、バイクのカスタマイズ詳細を保存・取得し、注文の確定および購入後の追跡に使用されます。',
-  cs_s9_li1     : 'ログインプロンプトページで、<strong>「Login via GIANT」</strong>をクリックする。',
-  cs_s9_li2     : 'Giant Group の ID ポータルにリダイレクトされる。',
-  cs_s9_li3     : 'GiantID のメールアドレスとパスワードを入力し、<strong>「Log in」</strong>をクリックする。',
-  cs_s9_li4     : 'GiantID をお持ちでない場合は、同じポータルから作成できる。',
-  cs_s9_fig1    : '図17 — ログインプロンプト：「Login via GIANT」ボタン',
-  cs_s9_fig2    : '図18 — GiantID パスワード入力',
+  cs_s9_p1      : '確認ページから <strong>「ADD TO CART」</strong>をクリックすると、チェックアウトを続行する前に、販売店は <strong>GAC（Giant Account）</strong>でのログインを求められます。',
+  cs_s9_p2      : '<strong>ログインが必要な理由：</strong>GAC アカウントは、本人確認、バイクのカスタマイズ詳細の保存・取得、注文の確定、および購入後の追跡に使用されます。',
+  cs_s9_li1     : 'Giant Group の認証ポータルにリダイレクトされる。',
+  cs_s9_li2     : '<strong>GAC</strong> アカウントでログインする — Configuration Portal または DCF と同じユーザー名とパスワードです。',
+  cs_s9_li3     : 'パスワードをお忘れの場合は、<strong>「Forgot your password?」</strong>をクリックしてリセットしてください。',
+  cs_s9_fig1    : '図17 — GAC アカウントでのログイン',
 
   /* 10. チェックアウト */
   cs_s10_heading : '10. チェックアウト',
-  cs_s10_p1      : 'ログイン後、チェックアウトページに移動します。右側の注文サマリーにカスタムバイクの設定が表示されます。',
+  cs_s10_p1      : 'ログイン後、販売店はチェックアウトページに移動します。右側の注文サマリーにカスタムバイクの設定が表示されます。',
   cs_s10_p2      : '注文を確定するには、以下の項目を入力してください：',
-  cs_s10_li1     : '<strong>受け取り場所（Pickup Location）</strong> — 最寄りの Giant 正規販売店を選択する。店舗での受け取りは送料無料。',
-  cs_s10_li2     : '<strong>お支払い方法（Payment Method）</strong> — バイク受け取り時に店舗で支払う場合は <em>「Payment in the store」</em>を選択する。',
-  cs_s10_li3     : '<strong>請求先住所（Billing Address）</strong> — 請求先住所（名前・番地・郵便番号・市区町村・国）を確認または入力する。',
+  cs_s10_li1     : '<strong>お客様情報（End Customer Info）</strong> — お客様の First name、Last name、Email、Phone number を入力する。',
+  cs_s10_li2     : '<strong>受け取り場所（Pickup Location）</strong> — 最寄りの Giant 正規販売店を選択する。店舗での受け取りは送料無料。',
+  cs_s10_li3     : '<strong>お支払い方法（Payment Method）</strong> — バイク受け取り時に店舗で支払う場合は <em>「Payment in the store」</em>を選択する。',
+  cs_s10_li4     : '<strong>請求先住所（Billing Address）</strong> — 請求先住所（名前・番地・郵便番号・市区町村・国）を確認または入力する。',
+  cs_s10_li5     : '<strong>備考（Remark）</strong> — 任意項目。お客様からの特別なご要望があれば記入する（最大1000文字）。',
   cs_s10_p3      : '右側の注文サマリー（設定の全詳細と合計金額（小計 + 税）が記載）を確認します。<strong>「Complete Purchase」</strong>をクリックして注文を確定します。',
-  cs_s10_fig1    : '図19 — チェックアウトページ：店舗選択とお支払い',
-  cs_s10_fig2    : '図20 — チェックアウトページ：請求先住所と合計金額',
+  cs_s10_fig1    : '図18 — チェックアウトページ：お客様情報、店舗選択とお支払い',
+  cs_s10_fig2    : '図19 — チェックアウトページ：請求先住所、備考と合計金額',
 
   /* 11. 注文確認 */
   cs_s11_heading : '11. 注文確認',
@@ -247,11 +247,10 @@ window.i18n['ja'] = {
   cs_s11_li1     : '<strong>確認番号</strong>（例：#8MI205UL）とサンクスメッセージ。',
   cs_s11_li2     : '受け取り店舗の場所を示す<strong>地図</strong>。',
   cs_s11_li3     : '注文の準備が整ったときにメールが送信されることを確認するメッセージ。',
-  cs_s11_li4     : 'Giant Shop アプリで<strong>受け取り通知を設定する</strong>オプション。',
-  cs_s11_li5     : '<strong>注文詳細</strong> — 連絡先情報・受け取り場所（住所と電話番号）・お支払い方法・請求先住所。',
+  cs_s11_li4     : '<strong>注文詳細</strong> — 連絡先情報・受け取り場所（住所と電話番号）・お支払い方法・請求先住所。',
   cs_s11_p2      : '右側にすべての設定詳細を含む完全な注文サマリーが表示されます。<strong>「Continue shopping」</strong>をクリックして Giant 公式サイトに戻ります。',
-  cs_s11_fig1    : '図21 — 注文確認：サンクスページと地図',
-  cs_s11_fig2    : '図22 — 注文確認：注文詳細全体',
+  cs_s11_fig1    : '図20 — 注文確認：サンクスページと地図',
+  cs_s11_fig2    : '図21 — 注文確認：注文詳細全体',
 
   /* ══════════════════════════════════════════════════════════
      注文管理ポータル
@@ -405,7 +404,7 @@ window.i18n['ja'] = {
 
   sp_cover_title   : 'Shopify 注文管理',
   sp_cover_sub     : 'GSC スタッフ限定',
-  sp_cover_desc    : 'このセクションは Giant サービスセンター（GSC）の社内スタッフ専用です。Shopify プラットフォームを通じて Giant EU のカスタムバイク注文を監視・管理する方法について説明します。',
+  sp_cover_desc    : 'このセクションは Giant セールスカンパニー（GSC）の社内スタッフ専用です。Shopify プラットフォームを通じて Giant EU のカスタムバイク注文を監視・管理する方法について説明します。',
 
   sp_s1_heading : '1. 概要',
   sp_s1_p1      : 'Giant EU は、消費者向けカスタムバイクウェブサイトからの注文の e コマースバックエンドとして Shopify を使用しています。顧客がコンシューマーサイトで購入を完了すると、注文が自動的に Shopify に作成されます。',

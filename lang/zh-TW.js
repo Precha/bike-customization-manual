@@ -39,7 +39,7 @@ window.i18n['zh-TW'] = {
   /* 2. 目標對象 */
   home_s2_heading : '2. 目標對象',
   home_s2_p1      : '本手冊適用於以下人員：',
-  home_s2_gsc_heading  : 'GSC 人員（Giant 服務中心／內部員工）',
+  home_s2_gsc_heading  : 'GSC 人員（Giant 銷售公司／內部員工）',
   home_s2_gsc_li1 : '使用 <strong>訂單管理後台</strong> 監控全經銷商網絡的所有客製化訂單。',
   home_s2_gsc_li2 : '在每個履行里程碑（付款、出貨、取車）更新訂單狀態。',
   home_s2_gsc_li3 : '留下內部評論並與經銷商門市協調。',
@@ -221,25 +221,25 @@ window.i18n['zh-TW'] = {
 
   /* 9. 登入 */
   cs_s9_heading : '9. 登入',
-  cs_s9_p1      : '從確認規格頁面點擊 <strong>「ADD TO CART」</strong> 後，系統會提示您以 <strong>GiantID</strong> 登入，方可繼續結帳流程。',
-  cs_s9_p2      : '<strong>為何需要登入：</strong>GiantID 用於儲存和擷取您的自行車客製化資料、下訂單及購買後的訂單追蹤。',
-  cs_s9_li1     : '在登入提示頁面，點擊 <strong>「Login via GIANT」</strong>。',
-  cs_s9_li2     : '您將被重新導向至 Giant Group 身分驗證入口。',
-  cs_s9_li3     : '輸入您的 GiantID 電子郵件地址和密碼，然後點擊 <strong>「Log in」</strong>。',
-  cs_s9_li4     : '如果您尚無 GiantID，可在同一入口建立帳號。',
-  cs_s9_fig1    : '圖 17 — 登入提示：「Login via GIANT」按鈕',
-  cs_s9_fig2    : '圖 18 — GiantID 密碼輸入',
+  cs_s9_p1      : '從確認規格頁面點擊 <strong>「ADD TO CART」</strong> 後，系統會提示 Retailer 以 <strong>GAC（Giant Account）</strong>帳號登入，方可繼續結帳流程。',
+  cs_s9_p2      : '<strong>為何需要登入：</strong>GAC 帳號用於驗證身分、儲存和擷取自行車客製化資料、送出訂單及購買後的訂單追蹤。',
+  cs_s9_li1     : '您將被重新導向至 Giant Group 驗證入口。',
+  cs_s9_li2     : '請以 <strong>GAC</strong> 帳號登入 — 帳號密碼與 Configuration Portal 或 DCF 相同。',
+  cs_s9_li3     : '如忘記密碼，請點擊 <strong>「Forgot your password?」</strong> 以重設密碼。',
+  cs_s9_fig1    : '圖 17 — 以 GAC 帳號登入',
 
   /* 10. 結帳 */
   cs_s10_heading : '10. 結帳',
-  cs_s10_p1      : '登入後，您將進入結帳頁面。右側的訂單摘要顯示您的客製化自行車配置。',
+  cs_s10_p1      : '登入後，Retailer 將進入結帳頁面。右側的訂單摘要顯示客製化自行車配置。',
   cs_s10_p2      : '填寫以下欄位以完成訂單：',
-  cs_s10_li1     : '<strong>取車門市（Pickup Location）</strong>— 選擇最近的 Giant 授權門市。門市取車免運費。',
-  cs_s10_li2     : '<strong>付款方式（Payment Method）</strong>— 選擇 <em>「Payment in the store」</em>，於取車時在門市付款。',
-  cs_s10_li3     : '<strong>帳單地址（Billing Address）</strong>— 確認或輸入您的帳單地址（姓名、街道、郵遞區號、城市、國家）。',
+  cs_s10_li1     : '<strong>消費者資訊（End Customer Info）</strong>— 填寫消費者的 First name、Last name、Email 及 Phone number。',
+  cs_s10_li2     : '<strong>取車門市（Pickup Location）</strong>— 選擇最近的 Giant 授權門市。門市取車免運費。',
+  cs_s10_li3     : '<strong>付款方式（Payment Method）</strong>— 選擇 <em>「Payment in the store」</em>，於取車時在門市付款。',
+  cs_s10_li4     : '<strong>帳單地址（Billing Address）</strong>— 確認或輸入帳單地址（姓名、街道、郵遞區號、城市、國家）。',
+  cs_s10_li5     : '<strong>備註（Remark）</strong>— 選填，可填寫消費者的特殊需求（最多 1000 字元）。',
   cs_s10_p3      : '確認右側的訂單摘要（包含所有配置詳情和總金額，含稅）。點擊 <strong>「Complete Purchase」</strong> 完成訂購。',
-  cs_s10_fig1    : '圖 19 — 結帳頁面：門市選擇與付款方式',
-  cs_s10_fig2    : '圖 20 — 結帳頁面：帳單地址與總金額',
+  cs_s10_fig1    : '圖 18 — 結帳頁面：消費者資訊、門市選擇與付款方式',
+  cs_s10_fig2    : '圖 19 — 結帳頁面：帳單地址、備註與總金額',
 
   /* 11. 訂單確認 */
   cs_s11_heading : '11. 訂單確認',
@@ -247,11 +247,10 @@ window.i18n['zh-TW'] = {
   cs_s11_li1     : '<strong>訂單確認號碼</strong>（例如 #8MI205UL）及感謝訊息。',
   cs_s11_li2     : '顯示取車門市位置的 <strong>地圖</strong>。',
   cs_s11_li3     : '確認訊息：訂單備妥時將發送電子郵件通知。',
-  cs_s11_li4     : '透過 Giant Shop 應用程式 <strong>設定取車通知</strong> 的選項。',
-  cs_s11_li5     : '<strong>訂單詳情</strong>— 聯絡資訊、取車位置（地址和電話）、付款方式和帳單地址。',
+  cs_s11_li4     : '<strong>訂單詳情</strong>— 聯絡資訊、取車位置（地址和電話）、付款方式和帳單地址。',
   cs_s11_p2      : '右側顯示包含所有配置詳情的完整訂單摘要。點擊 <strong>「Continue shopping」</strong> 返回 Giant 官網。',
-  cs_s11_fig1    : '圖 21 — 訂單確認：感謝頁面與地圖',
-  cs_s11_fig2    : '圖 22 — 訂單確認：完整訂單詳情',
+  cs_s11_fig1    : '圖 20 — 訂單確認：感謝頁面與地圖',
+  cs_s11_fig2    : '圖 21 — 訂單確認：完整訂單詳情',
 
   /* ══════════════════════════════════════════════════════════
      訂單管理後台
@@ -405,7 +404,7 @@ window.i18n['zh-TW'] = {
 
   sp_cover_title   : 'Shopify 訂單管理',
   sp_cover_sub     : '僅限 GSC 人員',
-  sp_cover_desc    : '本章節僅供 Giant 服務中心（GSC）內部人員使用，說明如何透過 Shopify 平台監控和管理 Giant EU 客製化自行車訂單。',
+  sp_cover_desc    : '本章節僅供 Giant 銷售公司（GSC）內部人員使用，說明如何透過 Shopify 平台監控和管理 Giant EU 客製化自行車訂單。',
 
   sp_s1_heading : '1. 系統概覽',
   sp_s1_p1      : 'Giant EU 使用 Shopify 作為消費者客製化自行車網站訂單的電子商務後台。當客戶在消費者網站完成購買後，訂單會自動建立於 Shopify 中。',

@@ -39,7 +39,7 @@ window.i18n['nl'] = {
   /* 2. Doelgroep */
   home_s2_heading : '2. Doelgroep',
   home_s2_p1      : 'Deze handleiding is bestemd voor de volgende groepen:',
-  home_s2_gsc_heading  : 'GSC-medewerkers (Giant Service Center / Intern)',
+  home_s2_gsc_heading  : 'GSC-medewerkers (Giant Sales Companies / Intern)',
   home_s2_gsc_li1 : 'Gebruik het <strong>Beheerdersportaal</strong> om alle aangepaste fietsbestellingen in het dealernetwerk te bewaken.',
   home_s2_gsc_li2 : 'Werk bestellingsstatussen bij bij elke mijlpaal (betaling, levering, afhaling).',
   home_s2_gsc_li3 : 'Laat interne opmerkingen achter en coördineer met dealerwinkels.',
@@ -221,25 +221,25 @@ window.i18n['nl'] = {
 
   /* 9. Inloggen */
   cs_s9_heading : '9. Inloggen',
-  cs_s9_p1      : 'Wanneer u op <strong>"ADD TO CART"</strong> klikt op de overzichtspagina, wordt u gevraagd in te loggen met een <strong>GiantID</strong> voordat het afrekenen kan doorgaan.',
-  cs_s9_p2      : '<strong>Waarom inloggen vereist is:</strong> GiantID wordt gebruikt om uw fietsconfiguratie op te slaan en op te halen, uw bestelling te plaatsen en deze na aankoop te volgen.',
-  cs_s9_li1     : 'Klik op de inlogpromptpagina op <strong>"Login via GIANT"</strong>.',
-  cs_s9_li2     : 'U wordt doorgestuurd naar het Giant Group-identiteitsportaal.',
-  cs_s9_li3     : 'Voer uw GiantID-e-mailadres en wachtwoord in en klik op <strong>"Log in"</strong>.',
-  cs_s9_li4     : 'Als u geen GiantID heeft, kunt u er een aanmaken via hetzelfde portaal.',
-  cs_s9_fig1    : 'Figuur 17 — Inlogprompt: knop "Login via GIANT"',
-  cs_s9_fig2    : 'Figuur 18 — GiantID wachtwoordinvoer',
+  cs_s9_p1      : 'Wanneer u op <strong>"ADD TO CART"</strong> klikt op de overzichtspagina, wordt de dealer gevraagd in te loggen met een <strong>GAC (Giant Account)</strong> voordat het afrekenen kan doorgaan.',
+  cs_s9_p2      : '<strong>Waarom inloggen vereist is:</strong> Het GAC-account wordt gebruikt om de identiteit te verifiëren, de fietsconfiguratie op te slaan en op te halen, de bestelling te plaatsen en deze na aankoop te volgen.',
+  cs_s9_li1     : 'U wordt doorgestuurd naar het Giant Group-authenticatieportaal.',
+  cs_s9_li2     : 'Log in met uw <strong>GAC</strong>-account — dezelfde gebruikersnaam en hetzelfde wachtwoord als voor het Configuration Portal of DCF.',
+  cs_s9_li3     : 'Als u uw wachtwoord bent vergeten, klik op <strong>"Forgot your password?"</strong> om het opnieuw in te stellen.',
+  cs_s9_fig1    : 'Figuur 17 — Inloggen met een GAC-account',
 
   /* 10. Afrekenen */
   cs_s10_heading : '10. Afrekenen',
-  cs_s10_p1      : 'Na het inloggen gaat u naar de afrekenpagin. Uw aangepaste fietsconfiguratie wordt weergegeven in de bestellingsoverzicht aan de rechterkant.',
-  cs_s10_p2      : 'Vul de volgende velden in om uw bestelling te plaatsen:',
-  cs_s10_li1     : '<strong>Afhaallocatie (Pickup Location)</strong> — Selecteer uw dichtstbijzijnde geautoriseerde Giant-winkel. Afhalen in de winkel is gratis.',
-  cs_s10_li2     : '<strong>Betaalmethode (Payment Method)</strong> — Selecteer <em>"Payment in the store"</em> om te betalen bij het ophalen van de fiets.',
-  cs_s10_li3     : '<strong>Factuuradres (Billing Address)</strong> — Bevestig of voer uw factuuradres in (naam, straat, postcode, stad, land).',
+  cs_s10_p1      : 'Na het inloggen gaat de dealer naar de afrekenpagina. De aangepaste fietsconfiguratie wordt weergegeven in de bestellingsoverzicht aan de rechterkant.',
+  cs_s10_p2      : 'Vul de volgende velden in om de bestelling te plaatsen:',
+  cs_s10_li1     : '<strong>Klantgegevens (End Customer Info)</strong> — Voer de voornaam, achternaam, het e-mailadres en telefoonnummer van de eindklant in.',
+  cs_s10_li2     : '<strong>Afhaallocatie (Pickup Location)</strong> — Selecteer de dichtstbijzijnde geautoriseerde Giant-winkel. Afhalen in de winkel is gratis.',
+  cs_s10_li3     : '<strong>Betaalmethode (Payment Method)</strong> — Selecteer <em>"Payment in the store"</em> om te betalen bij het ophalen van de fiets.',
+  cs_s10_li4     : '<strong>Factuuradres (Billing Address)</strong> — Bevestig of voer het factuuradres in (naam, straat, postcode, stad, land).',
+  cs_s10_li5     : '<strong>Opmerking (Remark)</strong> — Optioneel. Gebruik dit veld om eventuele bijzondere verzoeken van de eindklant te noteren (max. 1000 tekens).',
   cs_s10_p3      : 'Controleer het bestellingensamenvattingen aan de rechterkant, met alle configuratiegegevens en de totaalprijs (subtotaal + belastingen). Klik op <strong>"Complete Purchase"</strong> om af te ronden.',
-  cs_s10_fig1    : 'Figuur 19 — Afrekenspagina: winkelselectie en betaling',
-  cs_s10_fig2    : 'Figuur 20 — Afrekenspagina: factuuradres en totaal',
+  cs_s10_fig1    : 'Figuur 18 — Afrekenspagina: klantgegevens, winkelselectie en betaling',
+  cs_s10_fig2    : 'Figuur 19 — Afrekenspagina: factuuradres, opmerking en totaal',
 
   /* 11. Bevestiging bestelling */
   cs_s11_heading : '11. Bevestiging bestelling',
@@ -247,11 +247,10 @@ window.i18n['nl'] = {
   cs_s11_li1     : 'Een <strong>bevestigingsnummer</strong> (bijv. #8MI205UL) en een bedankbericht.',
   cs_s11_li2     : 'Een <strong>kaart</strong> met de locatie van de afhaalwinkel.',
   cs_s11_li3     : 'Een bericht dat er een e-mail wordt gestuurd wanneer de bestelling klaar is voor afhaling.',
-  cs_s11_li4     : 'Een optie om <strong>afhaalmeldingen te ontvangen</strong> via de Giant Shop-app.',
-  cs_s11_li5     : '<strong>Bestellinggegevens</strong> — Contactinformatie, afhaallocatie (adres en telefoon), betaalmethode en factuuradres.',
+  cs_s11_li4     : '<strong>Bestellinggegevens</strong> — Contactinformatie, afhaallocatie (adres en telefoon), betaalmethode en factuuradres.',
   cs_s11_p2      : 'Aan de rechterkant wordt een volledig bestellingenoverzicht weergegeven met alle configuratiegegevens. Klik op <strong>"Continue shopping"</strong> om terug te keren naar de Giant-website.',
-  cs_s11_fig1    : 'Figuur 21 — Bevestiging bestelling: bedankpagina met kaart',
-  cs_s11_fig2    : 'Figuur 22 — Bevestiging bestelling: volledige bestellinggegevens',
+  cs_s11_fig1    : 'Figuur 20 — Bevestiging bestelling: bedankpagina met kaart',
+  cs_s11_fig2    : 'Figuur 21 — Bevestiging bestelling: volledige bestellinggegevens',
 
   /* ══════════════════════════════════════════════════════════
      BEHEERDERSPORTAAL
@@ -405,7 +404,7 @@ window.i18n['nl'] = {
 
   sp_cover_title   : 'Shopify Bestellingbeheer',
   sp_cover_sub     : 'Alleen voor GSC-medewerkers',
-  sp_cover_desc    : 'Dit gedeelte is uitsluitend bestemd voor interne medewerkers van het Giant Service Center (GSC). Het beschrijft hoe u Giant EU-bestellingen voor aangepaste fietsen kunt bewaken en beheren via het Shopify-platform.',
+  sp_cover_desc    : 'Dit gedeelte is uitsluitend bestemd voor interne medewerkers van Giant Sales Companies (GSC). Het beschrijft hoe u Giant EU-bestellingen voor aangepaste fietsen kunt bewaken en beheren via het Shopify-platform.',
 
   sp_s1_heading : '1. Overzicht',
   sp_s1_p1      : 'Giant EU gebruikt Shopify als e-commerce backend voor bestellingen die via de consumentgerichte website voor aangepaste fietsen worden geplaatst. Wanneer een klant een aankoop voltooit op de Consumentensite, wordt de bestelling automatisch aangemaakt in Shopify.',
