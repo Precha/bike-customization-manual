@@ -18,10 +18,10 @@ window.MANUAL_CONFIG = {
 
 
   /* ── 版本資訊 / Version Info ─────────────────────────────── */
-  manual_version  : '1.0',
-  last_updated    : '2026-05-16',      /* 格式 YYYY-MM-DD */
+  manual_version  : '1.1',
+  last_updated    : '2026-09-07',      /* 格式 YYYY-MM-DD */
   website_version : '1.1.0',           /* 對應的網站版本 */
-  release_notes   : '',                /* 選填：版本更新說明 */
+  release_notes   : '1. Login with GAC account for both frontend and configuration portal, not Giant ID 2. Consumer info in checkout page',                /* 選填：版本更新說明 */
 
   /* ── 聯繫支援 / Support Contacts ────────────────────────── */
   support_email        : 'custombike-support@giantcycling.com',
